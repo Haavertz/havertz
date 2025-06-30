@@ -1,0 +1,23 @@
+#!/bin/bash
+
+SELECTED_WALLPAPER="$1"
+WALLPAPER_DIR="$HOME/wallpapers"
+FULL_PATH="$WALLPAPER_DIR/$SELECTED_WALLPAPER"
+
+SYMLINK_CONFIG_FILE="$HOME/.config/hypr/hyprpaper.conf"
+SYMLINK_LOCK_CONFIG="$HOME/.config/hypr/hyprlock.conf"
+SYSTEM_CONFIG_FILE="/usr/share/hypr/hyprpaper.conf"
+
+TARGET_FILE=$(readlink -f "$SYMLINK_CONFIG_FILE")
+TARGET_FILE2=$(readlink -f "$SYMLINK_LOCK_CONFIG")
+
+# Atualiza o hyprpaper.conf do usuário
+sed -i -e "s|^preload = .*|preload = $FULL_PATH|" \
+       -e "s|^wallpaper = ,.*|wallpaper = ,$FULL_PATH|" "$TARGET_FILE"
+
+# Atualiza o hyprlock.conf
+sed -i -e "s|^[[:space:]]*path = .*|    path = $FULL_PATH|" "$TARGET_FILE2"
+
+# Atualiza o hyprpaper.conf do sistema (requer permissão de root)
+sudo sed -i -e "s|^preload = .*|preload = $FULL_PATH|" \
+            -e "s|^wallpaper = ,.*|wallpaper = ,$FULL_PATH|" "$SYSTEM_CONFIG_FILE"

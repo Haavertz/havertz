@@ -1,0 +1,21 @@
+set $wallpaper /home/Raj/wallpapers/29.jpg
+
+set $background #0a090a
+set $foreground #f0d8c6
+
+set $color0 #0a090a
+set $color1 #957560
+set $color2 #3E838B
+set $color3 #498C95
+set $color4 #60969B
+set $color5 #7AA4A2
+set $color6 #9FAEAB
+set $color7 #f0d8c6
+set $color8 #a8978a
+set $color9 #957560
+set $color10 #3E838B
+set $color11 #498C95
+set $color12 #60969B
+set $color13 #7AA4A2
+set $color14 #9FAEAB
+set $color15 #f0d8c6

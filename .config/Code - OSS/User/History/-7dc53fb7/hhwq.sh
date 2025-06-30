@@ -1,0 +1,5 @@
+#!/bin/bash
+
+SELECTED_WALLPAPER=$1
+
+wal -i "$SELECTED_WALLPAPER"

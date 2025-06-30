@@ -1,0 +1,81 @@
+2025-06-29 13:15:23.801 [info] Started local extension host with pid 122219.
+2025-06-29 13:15:23.824 [info] ComputeTargetPlatform: linux-x64
+2025-06-29 13:15:26.516 [info] [perf] Render performance baseline is 26ms
+2025-06-29 13:15:27.716 [error] Error while getting the latest version for the extension eww-yuck.yuck. Unexpected token '<', "<!DOCTYPE "... is not valid JSON:
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Open VSX Registry</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5WLCZXC');</script>
+
+    <!-- Eclipse Cookie Consent -->
+    <link rel="stylesheet" type="text/css"
+        href="//www.eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/vendor/cookieconsent/cookieconsent.min.css" />
+    <script
+        src="//www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/vendor/cookieconsent/default.min.js">
+    </script>
+    <style>
+        a.cc-btn.cc-allow {
+            background-color: #c160ef;
+        }
+        a.cc-btn.cc-allow:hover, a.cc-btn.cc-allow:focus {
+            background-color: #444;
+        }
+        .cc-revoke {
+            display: none !important;
+        }
+        @media (prefers-color-scheme: dark) {
+          body {
+            background-color: #121212;
+          }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe title="Google Tag Manager" src="https://www.googletagmanager.com/ns.html?id=GTM-5WLCZXC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="main"></div>
+    <script src='/bundle.js' ></script>
+</body>
+
+</html>
+
+2025-06-29 13:17:46.244 [error] [Extension Host] Error: Git error
+	at ChildProcess.<anonymous> (/usr/lib/code/extensions/git/dist/main.js:2:604689)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-06-29 13:17:47.246 [error] An unknown error occurred. Please consult the log for more details.
+2025-06-29 13:17:52.807 [error] Error: Unable to read file 'git:/home/Raj/Documents/Github/Dotfiles/scripts/wallpaper_reload.sh?{"path":"/home/Raj/Documents/Github/Dotfiles/scripts/wallpaper_reload.sh","ref":"c1ad21799967cafef81b1d96c9765977ace34045"}' (Error: Unable to resolve nonexistent file 'git:/home/Raj/Documents/Github/Dotfiles/scripts/wallpaper_reload.sh?{"path":"/home/Raj/Documents/Github/Dotfiles/scripts/wallpaper_reload.sh","ref":"c1ad21799967cafef81b1d96c9765977ace34045"}')
+    at jvt.G (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:3311:65456)
+    at jvt.F (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:3311:65281)
+    at async nwt.L (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:3312:9345)
+    at async nwt.readStream (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:3312:9120)
+    at async Zye.Eb (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1835:12314)
+    at async Zye.resolve (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1835:10789)
+    at async twt.W (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:3312:5991)
+    at async tYe.r (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1835:21348)
+    at async qkt.acquire (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:27:3125)
+    at async iYe.createModelReference (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1835:22904)
+2025-06-29 13:17:54.455 [error] Error: Unable to read file 'git:/home/Raj/Documents/Github/Dotfiles/scripts/wallpaper_reload.sh?{"path":"/home/Raj/Documents/Github/Dotfiles/scripts/wallpaper_reload.sh","ref":"c1ad21799967cafef81b1d96c9765977ace34045"}' (Error: Unable to resolve nonexistent file 'git:/home/Raj/Documents/Github/Dotfiles/scripts/wallpaper_reload.sh?{"path":"/home/Raj/Documents/Github/Dotfiles/scripts/wallpaper_reload.sh","ref":"c1ad21799967cafef81b1d96c9765977ace34045"}')
+    at jvt.G (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:3311:65456)
+    at jvt.F (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:3311:65281)
+    at async nwt.L (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:3312:9345)
+    at async nwt.readStream (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:3312:9120)
+    at async Zye.Eb (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1835:12314)
+    at async Zye.resolve (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1835:10789)
+    at async twt.W (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:3312:5991)
+    at async tYe.r (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1835:21348)
+    at async qkt.acquire (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:27:3125)
+    at async iYe.createModelReference (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1835:22904)

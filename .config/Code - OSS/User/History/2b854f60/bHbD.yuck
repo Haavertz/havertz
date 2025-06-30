@@ -1,0 +1,18 @@
+;;;;; Variables ;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;
+
+;;;;; Deflistens ;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;; Defpolls ;;;;;
+
+(defpoll wallpapers :interval "5m" `sh $HOME/.config/eww/scripts/get-wallpapers.sh`)
+
+;;;;;;;;;;;;;;;;;;;;
+
+;; Widgets ;;
+
+(include "widgets/bar.yuck")
+(include "widgets/wallpaper.yuck")

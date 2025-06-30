@@ -1,0 +1,9 @@
+2025-06-26 09:04:04.774 [info] Started local extension host with pid 43417.
+2025-06-26 09:04:04.812 [info] ComputeTargetPlatform: linux-x64
+2025-06-26 09:04:07.494 [info] [perf] Render performance baseline is 28ms
+2025-06-26 09:13:33.413 [error] SignatureVerificationInternal: Signature verification failed with 'UnhandledException' error.
+    at $h.Bb (file:///usr/lib/code/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:64839)
+    at async $h.Ab (file:///usr/lib/code/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:63310)
+2025-06-26 09:13:33.433 [error] Signature verification failed with 'UnhandledException' error.: SignatureVerificationInternal: Signature verification failed with 'UnhandledException' error.
+    at $h.Bb (file:///usr/lib/code/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:64839)
+    at async $h.Ab (file:///usr/lib/code/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:63310)

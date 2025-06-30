@@ -1,0 +1,18 @@
+;;;;; Variables ;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;
+
+;;;;; Deflistens ;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;; Defpolls ;;;;;
+
+(defpoll wallpapers :interval "5m" :initial [1,2,4,8,9,44,43])
+
+;;;;;;;;;;;;;;;;;;;;
+
+;; Widgets ;;
+
+(include "widgets/bar.yuck")
+(include "widgets/wallpaper.yuck")

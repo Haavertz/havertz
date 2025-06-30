@@ -1,0 +1,4 @@
+2025-06-26 09:04:03.574 [info] update#setState disabled
+2025-06-26 09:04:03.574 [info] update#ctor - updates are disabled as there is no update URL
+2025-06-26 10:27:37.051 [error] [UtilityProcessWorker]: terminated unexpectedly with code 15, signal: unknown
+2025-06-26 10:27:37.053 [error] [UtilityProcess id: 1, type: fileWatcher, pid: 43416]: crashed with code 15 and reason 'killed'

@@ -1,0 +1,45 @@
+;;;;; Variables ;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;
+
+;;;;; Deflistens ;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;; Defpolls ;;;;;
+
+; Define um "poll" que executa o script get-wallpapers.sh a cada 5 minutos
+; e armazena a saída na variável 'wallpapers'.
+(defpoll wallpapers :interval "5m" `sh $HOME/.config/eww/scripts/get-wallpapers.sh`)
+
+;;;;;;;;;;;;;;;;;;;;
+
+;; Widgets ;;
+
+; Inclui os widgets definidos em bar.yuck
+(include "widgets/bar.yuck")
+; Inclui os widgets definidos em wallpaper.yuck (onde estará nosso label)
+(include "widgets/wallpaper.yuck")
+
+;;;;;;;;;;;;;;;;;;;;
+
+;; Windows ;;
+
+; Define uma janela principal para sua barra (se você tiver uma)
+; Certifique-se de ter um 'bar_widget' definido em widgets/bar.yuck para isso funcionar.
+(defwindow bar_window
+  :monitor 0 ; Define em qual monitor a janela aparecerá (0 é o principal)
+  :geometry (geometry :x "0%" :y "0%" :width "100%" :height "30px" :anchor "top center") ; Posição e tamanho
+  :stacking "fg" ; Mantém a janela na frente
+  :exclusive true ; Previne que outras janelas ocupem o mesmo espaço
+  (bar_widget) ; O widget principal da sua barra
+)
+
+; Define uma janela separada para exibir o caminho do wallpaper
+(defwindow wallpaper_info_window
+  :monitor 0
+  :geometry (geometry :x "10px" :y "40px" :width "300px" :height "30px" :anchor "top left")
+  :stacking "fg"
+  :exclusive false ; Esta janela não é exclusiva, pode ser sobreposta
+  (wallpaper_label_widget) ; O widget que criaremos para exibir o wallpaper
+)

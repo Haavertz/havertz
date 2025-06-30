@@ -1,0 +1,15 @@
+2025-06-29 13:13:03.111 [info] Extension host with pid 121651 started
+2025-06-29 13:13:03.111 [info] Skipping acquiring lock for /home/Raj/.config/Code - OSS/User/workspaceStorage/5a3259a1bc0a49d57d10a6bdc299ae50.
+2025-06-29 13:13:03.191 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-06-29 13:13:03.205 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-06-29 13:13:03.280 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-06-29 13:13:03.338 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-06-29 13:13:03.610 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-06-29 13:13:03.614 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-06-29 13:13:03.657 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-06-29 13:13:03.775 [info] Eager extensions activated
+2025-06-29 13:13:03.789 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-06-29 13:13:03.791 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-06-29 13:13:03.912 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-06-29 13:13:17.896 [info] Extension host terminating: renderer closed the MessagePort
+2025-06-29 13:13:17.906 [info] Extension host with pid 121651 exiting with code 0

@@ -1,0 +1,5 @@
+(defwidget bar []
+  (centerbox :orientation "v"
+    (workspaces)
+    (music)
+    (sidestuff)))

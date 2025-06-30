@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/Raj/wallpapers/29.jpg"
+let background = "#0a090a"
+let foreground = "#f0d8c6"
+let cursor     = "#f0d8c6"
+
+" Colors
+let color0  = "#0a090a"
+let color1  = "#957560"
+let color2  = "#3E838B"
+let color3  = "#498C95"
+let color4  = "#60969B"
+let color5  = "#7AA4A2"
+let color6  = "#9FAEAB"
+let color7  = "#f0d8c6"
+let color8  = "#a8978a"
+let color9  = "#957560"
+let color10 = "#3E838B"
+let color11 = "#498C95"
+let color12 = "#60969B"
+let color13 = "#7AA4A2"
+let color14 = "#9FAEAB"
+let color15 = "#f0d8c6"

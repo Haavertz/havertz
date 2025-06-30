@@ -1,0 +1,18 @@
+;;;;; Variables ;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;
+
+;;;;; Deflistens ;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;; Defpolls ;;;;;
+
+;;(defpoll wallpapers "sh /home/Raj/.config/eww/scripts/get-wallpaper.sh");;
+
+;;;;;;;;;;;;;;;;;;;;
+
+;; Widgets ;;
+
+(include "widgets/bar.yuck")
+(include "widgets/wallpaper.yuck")

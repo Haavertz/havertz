@@ -1,0 +1,13 @@
+(widget container-images
+ :class "container-img" :orientation "v"
+ :monitor 0
+ :geometry (geometry 
+                :x "10"
+                :y "10"
+                :width "310px"
+                :height "98%"
+                :anchor "center left")
+ :stacking "fg"
+ 
+ (list-images)
+)

@@ -1,0 +1,18 @@
+;;;;; Variables ;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;
+
+;;;;; Deflistens ;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;; Defpolls ;;;;;
+
+(defpoll wallpapers :interval "10m" :initial "[1,7,8,9,12]" "sh /home/Raj/.config/eww/scripts/get-wallpaper.sh")
+(defpoll wallpapers :interval "10m" :initial "[1,7,8,9,12]" "~/zenities/.config/eww/scripts/get-wallpapers.sh")
+;;;;;;;;;;;;;;;;;;;;
+
+;; Widgets ;;
+
+(include "widgets/bar.yuck")
+(include "widgets/wallpaper.yuck")
