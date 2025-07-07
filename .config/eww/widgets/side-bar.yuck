@@ -4,7 +4,7 @@
   (eventbox :onhover "${eww} update power-vert=true"
             :onhoverlost "${eww} update power-vert=false"
             :cursor "pointer"
-            :class
+
     (box  :orientation "vertical"
           :space-evenly "false"
       (button :class "power-vert"
@@ -83,7 +83,7 @@
                       :width "0%"
                       :height "96%"
                       :anchor "left center")
-  :stacking "bg"
+  :stacking "fg"
   :exclusive "true"
   :focusable "false"
   (side-bar))
