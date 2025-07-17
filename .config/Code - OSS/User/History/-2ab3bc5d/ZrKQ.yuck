@@ -1,0 +1,30 @@
+(defwidget win []
+  (box :class "window"
+       :hexpand false
+       :orientation "vertical"
+       :spacing 10
+       (box :orientation "vertical"
+            :vexpand true
+            (for wallpaper in wallpapers
+                (eventbox :onclick "sh /home/Raj/.config/eww/scripts/change-wallpaper.sh ${wallpaper}"
+                  (box  :width 300;
+                        :height 200;
+                        :orientation "vertical"
+                        :style "background-image: url('../../../zenities/wallpapers/preview-${wallpaper}.jpg'); background")
+                )
+            )
+       )
+  )
+)
+
+(defwindow wallpaper
+           :monitor 0
+           :geometry (geometry :x "10" 
+                               :y "10" 
+                               :width "310px"
+                               :height "98%" 
+                               :anchor "center left")
+           :stacking "overlay"
+           :exclusive false
+           :focusable true
+(win))

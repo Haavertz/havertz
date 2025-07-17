@@ -1,0 +1,74 @@
+;; Top Group ;;
+
+(defwidget power-vert []
+  (eventbox :onhover)
+  (box :class "powermenu-vert"
+       :orientation "vertical"
+       :space-evenly "true"
+       :spacing 4
+      (button :class "shutdown"
+              :cursor "pointer"
+              :tooltip "Power Off"
+              :onclick "shutdown now" "")
+      (button :class "lock"
+              :cursor "pointer"
+              :tooltip "Lock"
+              :onclick "hyprlock" "")
+      (button :class "reboot"
+              :cursor "pointer"
+              :tooltip "Reboot"
+              :onclick "reboot" "")
+      (button :class "suspend"
+              :cursor "pointer"
+              :tooltip "Suspend"
+              :onclick "systemctl suspend" "")
+      (button :class "exit"
+              :cursor "pointer"
+              :tooltip "exit Hyprland"
+              :onclick "hyprctl dispatch exit" "")))
+
+(defwidget topside []
+  (box :class "topside"
+       :orientation "vertical"
+       (power-vert)))
+
+;; Bottom Group ;;
+
+(defwidget hours []
+  (box :class "clock-vert"
+       :orientation "vertical"
+       :space-evenly false
+      hour minute))
+
+
+(defwidget bottomside []
+  (box  :class "bottomside"
+        :orientation "vertical"
+        (hours) ))
+
+;; Bar ;;
+(defwidget side-bar []
+  (box :class "side-bar"
+       :orientation "vertical"
+       :vexpand "false"
+       :space-evenly "true"
+       :hexpand "false"
+      (topside)
+      (bottomside)))
+
+;;;;;;;;;;;;;;;;;;;;
+
+;;;;;; Window ;;;;;;
+
+;; bar ;;
+(defwindow side-bar
+  :monitor 0
+  :geometry (geometry :x "0.5%"
+                      :y "0.5%"
+                      :width "0%"
+                      :height "98%"
+                      :anchor "left center")
+  :stacking "bg"
+  :exclusive "true"
+  :focusable "false"
+  (side-bar))

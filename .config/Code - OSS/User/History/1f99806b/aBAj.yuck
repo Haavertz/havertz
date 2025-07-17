@@ -1,0 +1,34 @@
+(defwidget john [] 
+  (box :class "progress_bar" :width "{$current_sound_value}" :height "5"))
+
+(defwidget audio_fg []
+  (box
+      :width "100"
+      :height "5"
+      :visible visible_audio_notification
+      :class "fg_audio"
+      :orientation "horizontal"
+      
+      (john)))
+
+(defwidget container_audio []
+  (box
+      :vexpand "false"
+      :hexpand "false"
+      :width "170"
+      :class "container_audio_class"
+      :orientation "vertical"
+      
+      (audio_fg)))
+
+(defwindow notification_audio 
+    :monitor 0
+    :geometry (geometry :x "0" 
+                        :y "10" 
+                        :width "170"
+                        :height "10"
+                        :anchor "top center")
+    :stacking "fg"
+    :exclusive "false"
+    :focusable "false"
+    (container_audio))

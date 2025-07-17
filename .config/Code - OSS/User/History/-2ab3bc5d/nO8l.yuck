@@ -1,0 +1,21 @@
+(defwidget win []
+  (box :class "window"
+       :hexpand "false"
+       :orientation "vertical"
+       (box :orientation "vertical"
+            :vexpand "true"
+            (for idx in wallpapers
+              (label :text idx))
+)))
+
+(defwindow wallpaper
+           :monitor 0
+           :geometry (geometry  :x "10" 
+                                :y "10" 
+                                :width "310px"
+                                :height "98%"
+                                :anchor "center left")
+           :stacking "overlay"
+           :exclusive "false"
+           :focusable "true"
+(win))

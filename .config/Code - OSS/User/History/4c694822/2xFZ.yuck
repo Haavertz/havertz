@@ -1,0 +1,46 @@
+;; Top Group ;;
+
+(defwidget topside []
+  (box :class ""))
+
+;; Bottom Group ;;
+
+(defwidget hours []
+  (box :class "clock-vert"
+       :orientation "vertical"
+       :space-evenly false
+      hour minute))
+
+
+(defwidget bottomside []
+  (box  :class "bottomside"
+        :orientation "vertical"
+        (hours) ))
+
+;; Bar ;;
+(defwidget side-bar []
+  (box :class "side-bar"
+       :orientation "vertical"
+       :vexpand "false"
+       :space-evenly "true"
+       :hexpand "false"
+      (topside)
+      (bottomside)
+      (bottomside)))
+
+;;;;;;;;;;;;;;;;;;;;
+
+;;;;;; Window ;;;;;;
+
+;; bar ;;
+(defwindow side-bar
+  :monitor 0
+  :geometry (geometry :x "0.5%"
+                      :y "0.5%"
+                      :width "0%"
+                      :height "98%"
+                      :anchor "left center")
+  :stacking "bg"
+  :exclusive "true"
+  :focusable "false"
+  (side-bar))

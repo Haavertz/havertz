@@ -1,0 +1,24 @@
+;;;;; Variables ;;;;;;
+(defvar eww "eww -c ~/.config/eww/")
+(defvar power-vert false)
+(defvar visible_audio_notification false)
+(defvar current_sound_value wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-)
+
+;;;;;;;;;;;;;;;;;;;;;
+
+;;;;; Deflistens ;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;; Defpolls ;;;;;
+
+(defpoll wallpapers :interval "10m" "sh /home/Raj/.config/eww/scripts/get-wallpaper.sh")
+(defpoll hour :interval "1s" "date '+%H'")
+(defpoll minute :interval "1s" "date '+%M'")
+;;;;;;;;;;;;;;;;;;;;
+
+;; Widgets ;;
+
+(include "widgets/side-bar.yuck")
+(include "widgets/wallpaper.yuck")
+(include "widgets/notification_audio.yuck")
