@@ -1,2 +1,0 @@
-2025-07-20 13:41:46.060 [error] [File Watcher ('parcel')] Unexpected error: inotify_add_watch on '/home/Raj/.config/Code - OSS/logs/20250712T001017/window1/exthost/vscode.css-language-features' failed: No such file or directory (EUNKNOWN) (path: /home/Raj)
-2025-07-20 13:41:46.060 [error] [File Watcher (universal)] inotify_add_watch on '/home/Raj/.config/Code - OSS/logs/20250712T001017/window1/exthost/vscode.css-language-features' failed: No such file or directory

@@ -1,4 +1,0 @@
-2025-07-13 20:22:51.763 [info] Started local extension host with pid 51662.
-2025-07-13 20:22:51.783 [info] ComputeTargetPlatform: linux-x64
-2025-07-13 20:22:53.081 [warning] [backup tracker] suspended, ignoring register event vscode-userdata:/home/Raj/.config/Code%20-%20OSS/User/settings.json 
-2025-07-13 20:22:53.106 [warning] [backup tracker] suspended, ignoring unregister event vscode-userdata:/home/Raj/.config/Code%20-%20OSS/User/settings.json 

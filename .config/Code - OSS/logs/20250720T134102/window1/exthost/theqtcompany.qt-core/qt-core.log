@@ -1,8 +1,0 @@
-2025-07-21 01:01:33.246 [info] [extension] Activating theqtcompany.qt-core
-2025-07-21 01:01:33.246 [info] [project] Creating project:"/home/Raj/Documents/Testes QML"
-2025-07-21 01:01:33.246 [info] [vcpkg] vcpkg is not installed
-2025-07-21 01:01:33.246 [info] [project] Setting Qt installation root for /home/Raj/Documents/Testes QML to: 
-2025-07-21 01:01:33.246 [info] [project] Setting additional Qt paths for /home/Raj/Documents/Testes QML to: 
-2025-07-21 01:01:33.246 [info] [project] Config values initialized for:/home/Raj/Documents/Testes QML
-2025-07-21 01:02:34.282 [info] [extension] Deactivating qt-core
-2025-07-21 01:02:34.282 [info] [project] Disposing project:/home/Raj/Documents/Testes QML

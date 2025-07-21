@@ -1,5 +1,0 @@
-(widget container-images
- :class "container-img" :orientation "v"
- 
- (list-images)
-)

@@ -1,2 +1,0 @@
-2025-07-18 16:31:50.453 [error] [File Watcher ('parcel')] Unexpected error: inotify_add_watch on '/home/Raj/.config/Code - OSS/User/workspaceStorage/1752504448189' failed: No such file or directory (EUNKNOWN) (path: /home/Raj)
-2025-07-18 16:31:50.453 [error] [File Watcher (universal)] inotify_add_watch on '/home/Raj/.config/Code - OSS/User/workspaceStorage/1752504448189' failed: No such file or directory
