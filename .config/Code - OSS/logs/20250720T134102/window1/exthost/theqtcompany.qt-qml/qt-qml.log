@@ -1,0 +1,9 @@
+2025-07-21 01:01:33.355 [info] [project] Creating project:/home/Raj/Documents/Testes QML
+2025-07-21 01:01:33.355 [info] [qmlls] Fetching release information
+2025-07-21 01:01:33.967 [info] [qmlls] Status Check: Not Installed
+2025-07-21 01:01:36.551 [info] [qmlls] Installing: qmlls-ubuntu-0.2.zip, 0.2
+2025-07-21 01:01:38.642 [info] [qmlls] Installation done
+2025-07-21 01:01:38.649 [info] [qmlls] Starting QML Language Server with:
+2025-07-21 01:01:38.666 [info] [qmlls] QML Language Server started for Testes QML /home/Raj/.local/share/qmlls/files/qmlls
+2025-07-21 01:02:34.282 [info] [extension] Deactivating qt-qml
+2025-07-21 01:02:34.282 [info] [project] Disposing project:/home/Raj/Documents/Testes QML

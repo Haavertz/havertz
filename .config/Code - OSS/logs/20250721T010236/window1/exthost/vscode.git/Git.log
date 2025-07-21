@@ -1,0 +1,58 @@
+2025-07-21 01:02:38.391 [info] [main] Log level: Info
+2025-07-21 01:02:38.392 [info] [main] Validating found git in: "git"
+2025-07-21 01:02:38.392 [info] [main] Using git "2.50.0" from "git"
+2025-07-21 01:02:38.392 [info] [Model][doInitialScan] Initial repository scan started
+2025-07-21 01:02:38.392 [info] > git rev-parse --show-toplevel [12ms]
+2025-07-21 01:02:38.392 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-07-21 01:02:38.392 [info] > git rev-parse --show-toplevel [2ms]
+2025-07-21 01:02:38.392 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-07-21 01:02:38.392 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-07-21 01:02:38.635 [info] > git rev-parse --show-toplevel [3ms]
+2025-07-21 01:02:38.635 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-07-21 01:02:40.008 [info] > git rev-parse --show-toplevel [2ms]
+2025-07-21 01:02:40.008 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-07-21 01:02:45.657 [info] > git rev-parse --show-toplevel [3ms]
+2025-07-21 01:02:45.657 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-07-21 01:02:48.582 [info] > git rev-parse --show-toplevel [2ms]
+2025-07-21 01:02:48.582 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-07-21 01:06:04.065 [info] > git rev-parse --show-toplevel [1ms]
+2025-07-21 01:06:04.071 [info] > git rev-parse --git-dir --git-common-dir [1ms]
+2025-07-21 01:06:04.081 [info] [Model][openRepository] Opened repository (path): /home/Raj/Documents/Testes QML/asdf-vm
+2025-07-21 01:06:04.081 [info] [Model][openRepository] Opened repository (real path): /home/Raj/Documents/Testes QML/asdf-vm
+2025-07-21 01:06:04.090 [info] > git config --get commit.template [2ms]
+2025-07-21 01:06:04.098 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2025-07-21 01:06:04.104 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/Raj/Documents/Testes QML/asdf-vm/.git/refs/remotes/origin/master'
+2025-07-21 01:06:04.105 [info] > git rev-parse refs/remotes/origin/master [2ms]
+2025-07-21 01:06:04.116 [info] > git status -z -uall [7ms]
+2025-07-21 01:06:04.117 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-07-21 01:06:04.135 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [9ms]
+2025-07-21 01:06:04.142 [info] > git config --get --local branch.master.vscode-merge-base [1ms]
+2025-07-21 01:06:04.142 [warning] [Git][config] git config failed: Failed to execute git
+2025-07-21 01:06:04.146 [info] > git config --get commit.template [11ms]
+2025-07-21 01:06:04.152 [info] > git reflog master --grep-reflog=branch: Created from *. [6ms]
+2025-07-21 01:06:04.157 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [5ms]
+2025-07-21 01:06:04.161 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/Raj/Documents/Testes QML/asdf-vm/.git/refs/remotes/origin/master'
+2025-07-21 01:06:04.161 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [5ms]
+2025-07-21 01:06:04.165 [info] > git rev-parse refs/remotes/origin/master [4ms]
+2025-07-21 01:06:04.176 [info] > git status -z -uall [7ms]
+2025-07-21 01:06:04.176 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/master refs/remotes/origin/master [12ms]
+2025-07-21 01:06:04.181 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [7ms]
+2025-07-21 01:06:04.189 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2025-07-21 01:06:04.190 [info] > git config --add --local branch.master.vscode-merge-base origin/master [10ms]
+2025-07-21 01:06:04.201 [info] > git config --get --local branch.master.vscode-merge-base [6ms]
+2025-07-21 01:06:04.208 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/master refs/remotes/origin/master [2ms]
+2025-07-21 01:06:04.214 [info] > git config --get commit.template [14ms]
+2025-07-21 01:06:04.219 [info] > git merge-base refs/heads/master refs/remotes/origin/master [6ms]
+2025-07-21 01:06:04.225 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [6ms]
+2025-07-21 01:06:04.229 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/Raj/Documents/Testes QML/asdf-vm/.git/refs/remotes/origin/master'
+2025-07-21 01:06:04.230 [info] > git diff --name-status -z --diff-filter=ADMR 028909728950370d662755b7e79d220aa8be152c...refs/remotes/origin/master [6ms]
+2025-07-21 01:06:04.231 [info] > git rev-parse refs/remotes/origin/master [2ms]
+2025-07-21 01:06:04.241 [info] > git status -z -uall [5ms]
+2025-07-21 01:06:04.242 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-07-21 01:06:04.599 [info] > git check-ignore -v -z --stdin [1ms]
+2025-07-21 01:11:38.830 [info] > git config --get commit.template [2ms]
+2025-07-21 01:11:38.838 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-07-21 01:11:38.846 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/Raj/Documents/Testes QML/asdf-vm/.git/refs/remotes/origin/master'
+2025-07-21 01:11:38.847 [info] > git rev-parse refs/remotes/origin/master [2ms]
+2025-07-21 01:11:38.859 [info] > git status -z -uall [6ms]
+2025-07-21 01:11:38.862 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]

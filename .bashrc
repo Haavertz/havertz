@@ -16,3 +16,4 @@ if [[ $- == *i* ]]; then
 fi
 
 
+. "$HOME/.cargo/env"

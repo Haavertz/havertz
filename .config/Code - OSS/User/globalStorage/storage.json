@@ -6,29 +6,13 @@
         "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///home/Raj"
+                "folderUri": "file:///home/Raj/Documents/Testes%20QML"
             },
             {
-                "folderUri": "file:///home/Raj/Music"
-            },
-            {
-                "folderUri": "file:///home/Raj/Documents"
+                "folderUri": "file:///home/Raj/Documents/Github/Dotfiles"
             }
         ],
-        "emptyWindows": [
-            {
-                "backupFolder": "1752452570748"
-            },
-            {
-                "backupFolder": "1752504448189"
-            },
-            {
-                "backupFolder": "1752504453074"
-            },
-            {
-                "backupFolder": "1752539320820"
-            }
-        ]
+        "emptyWindows": []
     },
     "windowControlHeight": 30,
     "profileAssociations": {
@@ -46,50 +30,24 @@
             "file:///home/Raj/Documents/Github/Dotfiles/.config": "__default__profile__",
             "file:///home/Raj/.cache": "__default__profile__",
             "file:///home/Raj/Music": "__default__profile__",
-            "file:///home/Raj/Documents": "__default__profile__"
+            "file:///home/Raj/Documents": "__default__profile__",
+            "file:///home/Raj/Documents/Testes%20QML": "__default__profile__"
         },
-        "emptyWindows": {
-            "1752504448189": "__default__profile__",
-            "1752504453074": "__default__profile__",
-            "1752539320820": "__default__profile__"
-        }
+        "emptyWindows": {}
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/Raj",
-            "backupPath": "/home/Raj/.config/Code - OSS/Backups/724ea87bded8f2d10b8d802b2a35d26a",
+            "folder": "file:///home/Raj/Documents/Testes%20QML",
+            "backupPath": "/home/Raj/.config/Code - OSS/Backups/a61ca3aa33214d1d65aa78a239bd1eac",
             "uiState": {
                 "mode": 1,
-                "x": 1378,
+                "x": 1306,
                 "y": 22,
-                "width": 1160,
+                "width": 1232,
                 "height": 1036
             }
         },
-        "openedWindows": [
-            {
-                "folder": "file:///home/Raj",
-                "backupPath": "/home/Raj/.config/Code - OSS/Backups/724ea87bded8f2d10b8d802b2a35d26a",
-                "uiState": {
-                    "mode": 1,
-                    "x": 1378,
-                    "y": 22,
-                    "width": 1160,
-                    "height": 1036
-                }
-            },
-            {
-                "folder": "file:///home/Raj/Documents",
-                "backupPath": "/home/Raj/.config/Code - OSS/Backups/29e1f32fd9996908dbcab4a0bcc0c6f2",
-                "uiState": {
-                    "mode": 1,
-                    "x": 60,
-                    "y": 22,
-                    "width": 1232,
-                    "height": 1036
-                }
-            }
-        ]
+        "openedWindows": []
     },
     "theme": "vs-dark",
     "themeBackground": "#171626",
@@ -179,6 +137,14 @@
                     "auxiliaryBarVisible": false
                 },
                 "8b16f6fe1474680b7acd5db74f8a4bba": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "7196c66bbe737cfdb413f999d9263aab": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "885cb496558392b9332dbb8ce3e797d6": {
                     "sideBarVisible": true,
                     "auxiliaryBarVisible": false
                 }
