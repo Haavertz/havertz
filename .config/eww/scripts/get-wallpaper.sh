@@ -1,6 +1,7 @@
 #!/bin/bash
 
-sh "~/scripts/normalize_wallpaper.sh"
+DIRECTORY_SCRIPT=~/scripts/normalize_wallpaper.sh
+sh "$DIRECTORY_SCRIPT"
 
 DIRECTORY=~/wallpapers/
 DIRECTORY=$(eval echo "$DIRECTORY")
