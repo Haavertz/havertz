@@ -1,0 +1,32 @@
+// Definindo as cores que você mostrou
+// @color0: #0C0B0A;
+// @color1: #756C67;
+// @color2: #847A74;
+// @color3: #8D837C;
+// @color4: #867F80;  
+// @color5: #968C86;
+// @color6: #AEA19A;
+// @color7: #ddd4cf;
+// @color8: #9a9490;
+
+// @background: @color0;
+// @foreground: @color7;
+// @accent: @color4;
+
+* {
+    accent: #867F80;
+    font: "JetBrainsMono Nerd Font 12";
+}
+
+window {
+    witdh: 10px;
+    location: 4;      
+    
+}
+
+window {
+    border: 2px;
+    border-color: @accent;
+    border-radius: 15px;
+    padding: 20px;
+}

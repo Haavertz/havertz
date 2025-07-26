@@ -1,4 +1,9 @@
 configuration {
+  modi: "drun,run,window";
+  font: "JetBrainsMono Nerd Font 12";
   show-icons: true;
-  combi-modes: "drun,window,emoji";
+  icon-theme: "Papirus";
+  terminal: "fish";
 }
+
+@theme "~/.config/rofi/rofivertz.rasi"
