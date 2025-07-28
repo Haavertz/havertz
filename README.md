@@ -16,5 +16,5 @@ eww
 fastfetch
 cava
 btop
-
+rofi emoji
 
