@@ -1,0 +1,41 @@
+# Core
+hyprland
+hyprpaper
+hyprlock
+hypridle
+rofi
+rofi-emoji
+eww
+yay
+vlc
+
+# Terminals
+kitty
+fish
+
+# Applications
+nautilus
+code
+yazi
+
+# Utilities
+cava
+btop
+fastfetch
+playerctl
+pamixer
+brightnessctl
+networkmanager
+bluez
+pulseaudio
+
+# Fonts
+ttf-font-awesome
+ttf-jetbrains-mono
+noto-fonts
+noto-fonts-emoji
+nerd-fonts-jetbrains-mono
+
+# Python (for pywal)
+python-pywal
+python-pillow
