@@ -13,7 +13,6 @@ A clean and minimal Hyprland, **performance**, **aesthetic**, and **workflow eff
 | Super + C         | Close Terminal        |
 | Super + D         | Launch Rofi           |
 | Super + Shift + W | Launch Wallpapers     |
-| Super + D         | Launch Rofi           |
 | Super + Shift + E | Open Nautilus         |
 | Super + E         | Launch Yazi           |
 | Super + P         | Take a Screenshot     |

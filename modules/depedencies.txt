@@ -8,6 +8,7 @@ rofi-emoji
 eww
 yay
 vlc
+ly
 
 # Terminals
 kitty
