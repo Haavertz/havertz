@@ -3,16 +3,18 @@
 (defvar power-vert false)
 (defvar visible-audio-notification true)
 (defvar current-sound-value "wpctl get-volume @DEFAULT_SINK@ | awk '{print $2}'")
-
+    
 ;;;;;;;;;;;;;;;;;;;;;
 
 ;;;;; Deflistens ;;;;;
-
+    
 ;;;;;;;;;;;;;;;;;;;;;;
 
 ;;;;; Defpolls ;;;;;
 
 (defpoll wallpapers :interval "10m" "sh /home/Raj/.config/eww/scripts/get-wallpaper.sh")
+(deflisten workspaces :initial "[]" "sh ~/.config/eww/scripts/get-workspaces.sh")
+(defpoll current_workspace :initial "1" :interval "0s" "hyprctl monitors -j | jq '.[] | select(.focused) | .activeWorkspace.id'")
 (defpoll hour :interval "1s" "date '+%H'")
 (defpoll minute :interval "1s" "date '+%M'")
 ;;;;;;;;;;;;;;;;;;;;

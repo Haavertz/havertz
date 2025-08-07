@@ -1,24 +1,20 @@
 ;; Top Group ;;
+(defwidget icon-arch []
+        (box    :orientation "vertical"
+                (label :text "󰣇")))
 
 (defwidget power-vert []
-  (eventbox :onhover "${eww} update power-vert=true"
-            :onhoverlost "${eww} update power-vert=false"
-            :cursor "pointer"
-
     (box  :orientation "vertical"
           :space-evenly "false"
-      (button :class "power-vert"
-          :onclick "~/.config/eww/scripts/app-launcher.sh" "󰣇")
-      (revealer :transition "slideup"
-                :reveal power-vert
-                :duration "300ms"
+          :class "wrapper-options-top"
+
         (box  :class "powermenu-vert"
               :orientation "vertical"
               :space-evenly "true"
-              :spacing 4
+              :spacing 0
           (button :class "shutdown"
                   :tooltip "Power Off"
-                  :onclick "shutdown now" "")
+                  :onclick "shutdown -h now" "")
           (button :class "lock"
                   :tooltip "Lock"
                   :onclick "hyprlock" "")
@@ -30,13 +26,27 @@
                   :onclick "systemctl suspend" "")
           (button :class "exit"
                   :tooltip "exit Hyprland"
-                  :onclick "hyprctl dispatch exit" ""))))))
+                  :onclick "hyprctl dispatch exit" ""))))
 
+(defwidget workspaces []
+  (eventbox 
+        :cursor "pointer"
+    (box :orientation "vertical"
+         :space-evenly false
+         :class "workspaces "
+         :vexpand "false"
+      (for workspace in workspaces
+        (button :class "workspace-vert ${current_workspace == workspace.id ? "current" : ""}"
+                :onclick "hyprctl dispatch workspace ${workspace.id}"
+                "${current_workspace == workspace.id ? "" : ""}")))))
 
 (defwidget topside []
   (box :class "topside"
        :orientation "vertical"
-       (power-vert)))
+       :space-evenly false
+        (icon-arch)
+        (power-vert)
+        (workspaces)))
 
 
 ;; Mid Group ;;
@@ -65,7 +75,6 @@
   (box :class "side-bar"
        :orientation "vertical"
        :vexpand "false"
-       :space-evenly "true"
        :hexpand "false"
       (topside)
       (midside)

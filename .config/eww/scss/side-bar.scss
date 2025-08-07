@@ -1,9 +1,24 @@
 .side-bar {
     background-color: $background;
     color: $foreground;
-    padding: 6px;
+    padding: 2px;
     margin: 0;
-    border-radius: 12px;
+    border-radius: 20px;
+}
+
+
+.topside, .bottomside, .midside{
+    // border: 1px solid red;
+    padding: 10px;
+    margin: 0;
+}
+
+.wrapper-options-top {
+    background-color: $foreground;
+    color: $background;
+    padding: 2px 3px;
+    margin-top: 15px;
+    border-radius: 20px;
 }
 
 
