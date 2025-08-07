@@ -10,6 +10,11 @@ SYMLINK_LOCK_CONFIG="$HOME/.config/hypr/hyprlock.conf"
 TARGET_FILE=$(readlink -f "$SYMLINK_CONFIG_FILE")
 TARGET_FILE2=$(readlink -f "$SYMLINK_LOCK_CONFIG")
 
+if pgrep -x eww > /dev/null; then
+  eww reload
+fi
+
+
 sed -i -e "s|^preload = .*|preload = $FULL_PATH|" \
        -e "s|^wallpaper = ,.*|wallpaper = ,$FULL_PATH|" "$TARGET_FILE"
 
@@ -24,4 +29,3 @@ if pgrep hyprlock > /dev/null; then
 fi
 
 "$HOME/.config/eww/scripts/update-colors.sh" "$FULL_PATH"
-eww reload
