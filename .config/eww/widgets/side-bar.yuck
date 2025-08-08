@@ -52,9 +52,27 @@
 ;; Mid Group ;;
 
 (defwidget midside []
-        (box    :class "midside"
-                :orientation "vertical"
-                ))
+  (box :class "midside"
+       :orientation "v"
+       :space-evenly true
+       :halign "center"
+       :valign "center"
+       (box :orientation "v"
+            :space-evenly false
+            :halign "center"
+            :valign "center"
+
+            (label :text "˹■")
+            (label :text "ハ")
+            (label :text "ー")
+            (label :text "ヴ")
+            (label :text "ェ")
+            (label :text "ル")
+            (label :text "ツ")
+            (label :text "■˼")
+        
+        )))
+
 
 ;; Bottom Group ;;
 
@@ -68,6 +86,8 @@
 (defwidget bottomside []
   (box  :class "bottomside"
         :orientation "vertical"
+        :halign "center"
+        :valign "center"
         (hours) ))
 
 ;; Bar ;;
