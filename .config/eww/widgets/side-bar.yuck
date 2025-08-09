@@ -28,17 +28,17 @@
                   :tooltip "exit Hyprland"
                   :onclick "hyprctl dispatch exit" ""))))
 
-(defwidget workspaces []
-  (eventbox 
-        :cursor "pointer"
-    (box :orientation "vertical"
-         :space-evenly false
-         :class "workspaces "
-         :vexpand "false"
-      (for workspace in workspaces
-        (button :class "workspace-vert ${current_workspace == workspace.id ? "current" : ""}"
-                :onclick "hyprctl dispatch workspace ${workspace.id}"
-                "${current_workspace == workspace.id ? "" : ""}")))))
+; (defwidget workspaces []
+;   (eventbox 
+;         :cursor "pointer"
+;     (box :orientation "vertical"
+;          :space-evenly false
+;          :class "workspaces "
+;          :vexpand "false"
+;       (for workspace in workspaces
+;         (button :class "workspace-vert ${current_workspace == workspace.id ? "current" : ""}"
+;                 :onclick "hyprctl dispatch workspace ${workspace.id}"
+;                 "${current_workspace == workspace.id ? "" : ""}")))))
 
 (defwidget topside []
   (box :class "topside"
@@ -46,7 +46,7 @@
        :space-evenly false
         (icon-arch)
         (power-vert)
-        (workspaces)))
+        ))
 
 
 ;; Mid Group ;;
@@ -57,21 +57,24 @@
        :space-evenly true
        :halign "center"
        :valign "center"
-       (box :orientation "v"
-            :space-evenly false
-            :halign "center"
-            :valign "center"
+       (eventbox
+                ;; :onhover "sh -c 'eww -c ~/.config/eww/ open wallpaper'" ;;
+                :timeout "100ms"
+                (box :orientation "v"
+                        :space-evenly false
+                        :halign "center"
+                        :valign "center"
 
-            (label :text "˹■")
-            (label :text "ハ")
-            (label :text "ー")
-            (label :text "ヴ")
-            (label :text "ェ")
-            (label :text "ル")
-            (label :text "ツ")
-            (label :text "■˼")
-        
-        )))
+                        (label :text "˹" :xalign 0)
+                        (label :text "ハ")
+                        (label :text "ー")
+                        (label :text "ヴ")
+                        (label :text "ェ")
+                        (label :text "ル")
+                        (label :text "ツ")
+                        (label :text "˼" :xalign 1)
+                        
+                        ))))
 
 
 ;; Bottom Group ;;
