@@ -2,7 +2,7 @@
 Dotfiles for Arch Linux and Hyprland Configs
 > _"  󰣇 ¬KISS   "_
 
-A clean and minimal Hyprland, **performance**, **aesthetic**, and **workflow efficiency**. 🥱
+A clean and minimal Hyprland, **performance**, **aesthetic**, and **workflow efficiency**. 🫩
 
 
 ## Keybinds (Super = Win key)
@@ -22,6 +22,11 @@ Full list in `~/.config/hypr/config/keybindings.conf`
 
 ---
 
+### Wallpapers
+
+in $HOME/wallpapers put your wallpapers and go in /scripts and try sh normalize_wallpaper.sh (with permission +x) and done!
+
+---
 ### Install Configs
 
 ```bash
