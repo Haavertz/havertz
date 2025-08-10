@@ -58,7 +58,6 @@
        :halign "center"
        :valign "center"
        (eventbox
-                ;; :onhover "sh -c 'eww -c ~/.config/eww/ open wallpaper'" ;;
                 :timeout "100ms"
                 (box :orientation "v"
                         :space-evenly false
@@ -81,14 +80,14 @@
 
 (defwidget hours []
   (box :class "clock-vert"
-       :orientation "vertical"
+       :orientation "v"
        :space-evenly false
       hour minute))
 
 
 (defwidget bottomside []
   (box  :class "bottomside"
-        :orientation "vertical"
+        :orientation "v"
         :halign "center"
         :valign "center"
         (hours) ))
@@ -96,7 +95,7 @@
 ;; Bar ;;
 (defwidget side-bar []
   (box :class "side-bar"
-       :orientation "vertical"
+       :orientation "v"
        :vexpand "false"
        :hexpand "false"
       (topside)

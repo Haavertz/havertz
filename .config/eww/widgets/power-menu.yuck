@@ -1,0 +1,22 @@
+
+(defwidget
+    (box  :spacing "50px"
+          :orientation "v"
+          :class "shutdown"
+        (label :text ""))
+)
+
+(defwidget power-menu
+  (revealer
+    :transition "slideright"
+    :duration "500ms"
+    :reveal true
+
+    (box  :orientation "v"
+          :spacing "5px"
+          :class "container-power-menu"
+        (shutdown)
+        (reboot)
+        (gif)
+        (lock)
+        (exit))))
