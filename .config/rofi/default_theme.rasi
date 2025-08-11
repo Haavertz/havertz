@@ -25,9 +25,10 @@ entry {
 
 window {
   location : center;
-  width    : 450px;
-  height   : 150px;
+  width    : 550px;
+  height   : 350px;
 
   background-color : @bg1;
   border-radius    : 8px;
 }
+

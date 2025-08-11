@@ -1,12 +1,35 @@
+(defwidget shutdown []
+  (box :spacing "0px"
+       :orientation "v"
+       :class "option-power-menu"
+       (button :class "shutdown"
+                  :tooltip "Power Off"
+                  :onclick "shutdown -h now" "")))
+(defwidget reboot []
+  (box :spacing "0px"
+       :orientation "v"
+       :class "option-power-menu"
+       (button :class "shutdown"
+                  :tooltip "Power Off"
+                  :onclick "reboot" "")))
 
-(defwidget
-    (box  :spacing "50px"
-          :orientation "v"
-          :class "shutdown"
-        (label :text ""))
-)
+(defwidget lock []
+  (box :spacing "0px"
+       :orientation "v"
+       :class "option-power-menu"
+       (button :class "shutdown"
+                  :tooltip "Power Off"
+                  :onclick "hyprlock" "")))
 
-(defwidget power-menu
+(defwidget exit []
+  (box :spacing "0px"
+       :orientation "v"
+       :class "option-power-menu"
+       (button :class "shutdown"
+                  :tooltip "Power Off"
+                  :onclick "" "")))
+
+(defwidget power-menu []
   (revealer
     :transition "slideright"
     :duration "500ms"
@@ -17,6 +40,22 @@
           :class "container-power-menu"
         (shutdown)
         (reboot)
-        (gif)
+        ; (gif)
         (lock)
-        (exit))))
+        (exit)
+        )))
+
+
+(defwindow power-menu
+  :monitor 0
+  :stacking "fg"
+  :focusable false
+  :geometry (geometry 
+                    :x "0px" 
+                    :y "0px" 
+                    :width "85px" 
+                    :height "350px"
+                    :anchor "center right")
+  :exclusive false
+  (power-menu))
+

@@ -1,15 +1,17 @@
 configuration {
-modes: "drun,emoji";
+modes: [ combi ];
 font: "JetBrainsMono Nerd Font 12";
 location: 0;
 yoffset: 0;
 xoffset: 0;
-combi-modes: [window,drun,emoji];
+combi-modes: [ drun, emoji ];
 hover-select: true;
 show-icons: true;
 /* icon-theme: ; */
 sort: true;
 sorting-method: "normal";
+run-command: "{cmd}";
+/* run-list-command: ""; */
 /*	fixed-num-lines: true;*/
 /*	preview-cmd: ;*/
 /*	on-selection-changed: ;*/
@@ -21,8 +23,6 @@ sorting-method: "normal";
 /*	terminal: "rofi-sensible-terminal";*/
 /*	ssh-client: "ssh";*/
 /*	ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";*/
-/*	run-command: "{cmd}";*/
-/*	run-list-command: "";*/
 /*	run-shell-command: "{terminal} -e {cmd}";*/
 /*	window-command: "wmctrl -i -R {window}";*/
 /*	window-match-fields: "all";*/
