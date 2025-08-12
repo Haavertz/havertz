@@ -51,29 +51,37 @@
 
 ;; Mid Group ;;
 
+(defwidget username-jp []
+        (box    :orientation "v"
+                :space-evenly false
+                :halign "center"
+                :valign "center"
+                (eventbox
+                        :timeout "100ms"
+                        (box :orientation "v"
+                                :space-evenly false
+                                :halign "center"
+                                :valign "center"
+
+                                (label :text "˹" :xalign 0)
+                                (label :text "ハ")
+                                (label :text "ー")
+                                (label :text "ヴ")
+                                (label :text "ェ")
+                                (label :text "ル")
+                                (label :text "ツ")
+                                (label :text "˼" :xalign 1)
+                        ))))
+
 (defwidget midside []
   (box :class "midside"
        :orientation "v"
-       :space-evenly true
-       :halign "center"
-       :valign "center"
-       (eventbox
-                :timeout "100ms"
-                (box :orientation "v"
-                        :space-evenly false
-                        :halign "center"
-                        :valign "center"
-
-                        (label :text "˹" :xalign 0)
-                        (label :text "ハ")
-                        (label :text "ー")
-                        (label :text "ヴ")
-                        (label :text "ェ")
-                        (label :text "ル")
-                        (label :text "ツ")
-                        (label :text "˼" :xalign 1)
-                        
-                        ))))
+       :height "100%"
+       :width "100%"
+;        :space-evenly false
+;        :halign "center"
+;        :valign "center"
+       (username-jp)))
 
 
 ;; Bottom Group ;;
@@ -81,15 +89,16 @@
 (defwidget hours []
   (box :class "clock-vert"
        :orientation "v"
-       :space-evenly false
+        :halign "center"
+        :valign "center"
       hour minute))
 
 
 (defwidget bottomside []
   (box  :class "bottomside"
         :orientation "v"
-        :halign "center"
-        :valign "center"
+        :height "100%"
+        :width "100%"
         (hours) ))
 
 ;; Bar ;;
