@@ -5,6 +5,7 @@
        (button :class "shutdown"
                   :tooltip "Power Off"
                   :onclick "shutdown -h now" "")))
+                  
 (defwidget reboot []
   (box :spacing "0px"
        :orientation "v"
@@ -49,7 +50,7 @@
 (defwindow power-menu
   :monitor 0
   :stacking "fg"
-  :focusable false
+  :focusable true
   :geometry (geometry 
                     :x "0px" 
                     :y "0px" 

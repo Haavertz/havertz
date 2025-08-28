@@ -1,23 +1,25 @@
 ;; Top Group ;;
-(defwidget icon-arch []
-        (box    :orientation "vertical"
-                (label :text "󰣇")))
-
 (defwidget power-vert []
+  (eventbox :onhover "${eww} update power-vert=true"
+            :onhoverlost "${eww} update power-vert=false"
+            :cursor "pointer"
     (box  :orientation "vertical"
           :space-evenly "false"
-          :class "wrapper-options-top"
-
+      (button :class "power-vert"
+              :onclick "~/.config/eww/scripts/app-launcher.sh" "󰣇")
+      (revealer :transition "slideup"
+                :reveal power-vert
+                :duration "300ms"
         (box  :class "powermenu-vert"
               :orientation "vertical"
               :space-evenly "true"
-              :spacing 0
+              :spacing 4
           (button :class "shutdown"
                   :tooltip "Power Off"
-                  :onclick "shutdown -h now" "")
+                  :onclick "shutdown now" "")
           (button :class "lock"
                   :tooltip "Lock"
-                  :onclick "hyprlock" "")
+                  :onclick "~/.config/eww/scripts/lock.sh" "")
           (button :class "reboot"
                   :tooltip "Reboot"
                   :onclick "reboot" "")
@@ -26,27 +28,27 @@
                   :onclick "systemctl suspend" "")
           (button :class "exit"
                   :tooltip "exit Hyprland"
-                  :onclick "hyprctl dispatch exit" ""))))
+                  :onclick "hyprctl dispatch exit" ""))))))
 
-; (defwidget workspaces []
-;   (eventbox 
-;         :cursor "pointer"
-;     (box :orientation "vertical"
-;          :space-evenly false
-;          :class "workspaces "
-;          :vexpand "false"
-;       (for workspace in workspaces
-;         (button :class "workspace-vert ${current_workspace == workspace.id ? "current" : ""}"
-;                 :onclick "hyprctl dispatch workspace ${workspace.id}"
-;                 "${current_workspace == workspace.id ? "" : ""}")))))
+;; Workspaces ;;
+(defwidget workspaces-vert []
+  (eventbox :onscroll "sh ~/.config/eww/bar/scripts/change-active-workspace.sh {} ${current_workspace}"
+    (box :orientation "vertical"
+         :space-evenly false
+         :class "workspaces-vert"
+         :vexpand "false"
+      (for workspace in workspaces
+        (button :class "workspace-vert ${current_workspace == workspace.id ? "current" : ""}"
+                :onclick "hyprctl dispatch workspace ${workspace.id}"
+                "${current_workspace == workspace.id ? "" : ""}")))))
 
+                
 (defwidget topside []
   (box :class "topside"
        :orientation "vertical"
        :space-evenly false
-        (icon-arch)
         (power-vert)
-        ))
+        (workspaces-vert)))
 
 
 ;; Mid Group ;;
@@ -78,20 +80,29 @@
        :orientation "v"
        :height "100%"
        :width "100%"
-;        :space-evenly false
-;        :halign "center"
-;        :valign "center"
        (username-jp)))
-
 
 ;; Bottom Group ;;
 
+(defwindow window-calendar
+        :monitor 0
+        :geometry (geometry :x "0.1%"
+                        :y "0.2%"
+                        :width "15%"
+                        :height "10%"
+                        :anchor "left bottom")
+        :stacking "fg"
+        :exclusive "true"
+        :focusable "false"
+(calendar))
+
 (defwidget hours []
-  (box :class "clock-vert"
-       :orientation "v"
+  (box 
+        :class "background-item"
+        :orientation "v"
         :halign "center"
-        :valign "center"
-      hour minute))
+        :valign "end"
+        hour minute))
 
 
 (defwidget bottomside []
@@ -121,7 +132,7 @@
   :geometry (geometry :x "0.5%"
                       :y "0.5%"
                       :width "0%"
-                      :height "97%"
+                      :height "98%"
                       :anchor "left center")
   :stacking "fg"
   :exclusive "true"

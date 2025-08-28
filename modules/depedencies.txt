@@ -9,6 +9,7 @@ eww
 yay
 vlc
 ly
+socat
 
 # Terminals
 kitty
@@ -36,6 +37,7 @@ ttf-jetbrains-mono
 noto-fonts
 noto-fonts-emoji
 nerd-fonts-jetbrains-mono
+Iosevka
 
 # Python (for pywal)
 python-pywal

@@ -28,7 +28,7 @@
            :geometry (geometry  :x "10" 
                                 :y "10" 
                                 :width "310px"
-                                :height "97%"
+                                :height "98%"
                                 :anchor "center left")
            :stacking "overlay"
            :exclusive "false"
