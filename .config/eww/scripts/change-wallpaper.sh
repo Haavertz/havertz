@@ -23,5 +23,5 @@ if pgrep hyprlock > /dev/null; then
   hyprlock & disown
 fi
 
-"$HOME/.config/eww/scripts/update-colors.sh" "$FULL_PATH"
+wal -i "$FULL_PATH"
 eww reload

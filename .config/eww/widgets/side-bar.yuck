@@ -1,4 +1,5 @@
 ;; Top Group ;;
+
 (defwidget power-vert []
   (eventbox :onhover "${eww} update power-vert=true"
             :onhoverlost "${eww} update power-vert=false"
@@ -16,7 +17,7 @@
               :spacing 4
           (button :class "shutdown"
                   :tooltip "Power Off"
-                  :onclick "shutdown now" "")
+                  :onclick "shutdown -h now" "")
           (button :class "lock"
                   :tooltip "Lock"
                   :onclick "~/.config/eww/scripts/lock.sh" "")
@@ -112,7 +113,7 @@
         :width "100%"
         (hours) ))
 
-;; Bar ;;
+;; Side-Bar ;;
 (defwidget side-bar []
   (box :class "side-bar"
        :orientation "v"
@@ -126,7 +127,7 @@
 
 ;;;;;; Window ;;;;;;
 
-;; bar ;;
+;; Bar ;;
 (defwindow side-bar
   :monitor 0
   :geometry (geometry :x "0.5%"

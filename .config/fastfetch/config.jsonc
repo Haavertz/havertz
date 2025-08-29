@@ -19,7 +19,7 @@
     { "type": "uptime" },
     { "type": "packages"},
     { "type": "cpu"},
-    { "type": "gpu"},
     { "type": "memory"}
   ]
 }
+
