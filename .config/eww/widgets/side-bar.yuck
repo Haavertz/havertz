@@ -99,29 +99,32 @@
                         :text day)))
 
                         
-(defwidget hours [] 
-  (eventbox
-    :onhover "eww update show-calendar=true"
-    :onhoverlost "eww update show-calendar=false"
-    (box
-      :orientation "v"
-      :halign "center"
-      :valign "end"
-      :spacing 0
-      :space-evenly false
+(defwidget hours []
+        (box    :orientation "v"
+                :valign "end"
+                :space-evenly true
 
-      (box 
-        :class "background-item"
-        :orientation "v"
-        :halign "center"
-        :valign "end"
-        hour
-        minute)
+                (eventbox     
+                        :onhover "eww update show-calendar=true"
+                        :onhoverlost "eww update show-calendar=false"
 
-      (revealer
-        :transition "slideup"
-        :reveal show-calendar
-        (calendar-v)))))
+                (box    :orientation "v"
+                        :halign "center"
+                        :valign "end"
+                        :spacing 0
+                        :space-evenly false
+
+                (box
+                        :class "background-item"
+                        :orientation "v"
+                        :halign "center"
+                        :valign "end"
+                        hour minute)
+
+                (revealer
+                        :transition "slideup"
+                        :reveal show-calendar
+                        (calendar-v))))))
 
 
 
