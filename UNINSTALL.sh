@@ -75,13 +75,13 @@ sudo chmod +x target/release/eww
 sudo cp target/release/eww /usr/local/bin/
 
 # Configure NetworkManager and Bluetooth
-sudo systemctl disable systemd-resolved
-sudo systemctl disable systemd-networkd
-sudo systemctl enable NetworkManager --now
-sudo systemctl enable bluetooth.service --now
+sudo systemctl disable NetworkManager --now
+sudo systemctl disable bluetooth.service --now
+sudo systemctl enable systemd-resolved
+sudo systemctl enable systemd-networkd
 
 # Change shell to fish
-chsh -s /usr/bin/fish
+chsh -s /bin/bash
 
 # Finish
 echo "Installation completed. Rebooting the system..."

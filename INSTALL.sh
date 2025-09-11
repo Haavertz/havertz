@@ -68,10 +68,12 @@ fi
 # Apply dotfiles
 echo "Applying dotfiles with stow"
 cd "$HOME/havertz/" || { echo "Error accessing $HOME/havertz"; exit 1; }
-stow .
+stow . -t $HOME
 
 # Return to home
 cd $HOME
+
+curl --proto '=https' -- tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # Install yay (AUR helper)
 git clone https://aur.archlinux.org/yay.git
@@ -82,10 +84,10 @@ rm -rf yay
 
 # Install packages via yay
 yay -S --noconfirm \
-  eww \
+  eww cmatrix cava \
   python-pywal \
   nerd-fonts-jetbrains-mono ttf-iosevka otf-hermit-nerd \
-  brave-bin zoxide eza fzf thefuck jq
+  brave-bin zoxide eza fzf thefuck jq libdbusmenu-glib gtk-layer-shell
 
 cd /tmp
 git clone https://github.com/elkowar/eww
