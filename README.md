@@ -24,7 +24,7 @@ Full list in `~/.config/hypr/config/keybindings.conf`
 
 ### Wallpapers
 
-in $HOME/wallpapers put your wallpapers and go in /scripts and try sh normalize_wallpaper.sh (with permission +x) and done!
+in $HOME/wallpapers put your wallpapers and go in $HOME/scripts and try sh normalize_wallpaper.sh (with permission +x) and done!
 
 ---
 ### Install Configs
