@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/Raj/wallpapers/4.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#101621",
+        "foreground": "#96c8e6",
+        "cursor": "#96c8e6"
+    },
+    "colors": {
+        "color0": "#101621",
+        "color1": "#565B67",
+        "color2": "#566577",
+        "color3": "#857C75",
+        "color4": "#386489",
+        "color5": "#607289",
+        "color6": "#75899D",
+        "color7": "#96c8e6",
+        "color8": "#698ca1",
+        "color9": "#565B67",
+        "color10": "#566577",
+        "color11": "#857C75",
+        "color12": "#386489",
+        "color13": "#607289",
+        "color14": "#75899D",
+        "color15": "#96c8e6"
+    }
+}
