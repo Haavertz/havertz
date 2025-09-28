@@ -7,19 +7,23 @@
     "height": 17
   },
   "display": {
-      "separator": " ■ ",
-      "constants": [
-          "──────────────────────────────"
-      ]
+    "separator": " ● ",
+    "constants": [
+      "──────────────────────────────"
+    ]
   },
   "modules": [
     { "type": "title" },
     { "type": "os" },
     { "type": "kernel" },
     { "type": "uptime" },
-    { "type": "packages"},
-    { "type": "cpu"},
-    { "type": "memory"}
+    { "type": "packages" },
+    { "type": "cpu" },
+    { "type": "memory" },
+    {
+        "type": "colors",
+        "symbol": "circle"
+    }
   ]
 }
 
