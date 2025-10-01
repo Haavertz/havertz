@@ -48,7 +48,7 @@ fi
 # Apply dotfiles
 echo "Applying dotfiles with stow"
 cd "$HOME/havertz/" || { echo "Error accessing $HOME/havertz"; exit 1; }
-stow .
+stow -Dv ./ -t ~/
 
 # Return to home
 cd $HOME
