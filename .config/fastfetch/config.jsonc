@@ -7,7 +7,7 @@
     "height": 17
   },
   "display": {
-    "separator": " ● ",
+    "separator": " ■ ",
     "constants": [
       "──────────────────────────────"
     ]
