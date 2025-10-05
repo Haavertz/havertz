@@ -5,15 +5,16 @@ Dotfiles for Arch Linux and Hyprland Configs
 A clean and minimal Hyprland, **performance**, **aesthetic**, and **workflow efficiency**. 🫩
 
 
-## Keybinds (Super = Win key)
+## Keybinds (Super == Win key)
 
 | Keybind           | Action                |
 | -------------     | --------------------- |
 | Super + Q         | Open Terminal         |
 | Super + C         | Close Terminal        |
-| Super + D         | Launch Rofi           |
+| Super + R         | Launch Rofi           |
 | Super + E         | Launch Yazi           |
 | Super + P         | Take a Screenshot     |
+| Super + A         | Reload Eww            |
 | Super + L         | Lock the Screen       |
 | Super + Shift + W | Launch Wallpapers     |
 | Super + Shift + E | Open Nautilus         |

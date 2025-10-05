@@ -1,9 +1,9 @@
 @import "~/.cache/wal/colors-rofi-dark.rasi"
 
 configuration {
-    modi:                       "drun,run,emoji";
+    modi:                       "drun,emoji";
     font:                       "JetBrainsMono Nerd Font 14";
-    show-icons:                 true;
+    show-icons:                 false;
     icon-theme:                 "kora";
     display-drun:               "∂";
     display-run:                "∂";
@@ -89,11 +89,11 @@ element alternate.normal {
 }
 
 element selected.active {
-	text-color: @background;
+	text-color: @selected-active-background;
 }
 
 element selected.normal {
-	text-color: @background;
+	text-color: #fff;
 }
 
 element-icon {
