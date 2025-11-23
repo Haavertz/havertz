@@ -17,7 +17,7 @@ return {
     {
         "mason-org/mason-lspconfig.nvim",
         opts = {
-            automatic_enable = { "lua_ls", "html", "pyright", "jdtls" },
+            automatic_enable = { "lua_ls", "css", "html", "pyright", "jdtls" },
         },
         dependencies = {
             { "mason-org/mason.nvim", opts = {} },
