@@ -1,41 +1,85 @@
-# Dotfiles
-Dotfiles for Arch Linux and Hyprland Configs
-> _"  󰣇 ¬KISS   "_
+# Dotfiles *Yugen* _haavertz_
 
-A clean and minimal Hyprland, **performance**, **aesthetic**, and **workflow efficiency**. 🫩
+Dotfiles for arch_user with hyprland config 
 
+A clean and minamal setup with _Hyprland_ 🫩
+Note: The configuration can be quite difficult for beginners, but KISS (Keep It Simple, Stupid).
+Note 2: This is still a _*beta*_ version.
 
-## Keybinds (Super == Win key)
+## Keybinds (Super == Win Key)
 
-| Keybind           | Action                |
-| -------------     | --------------------- |
-| Super + Q         | Open Terminal         |
-| Super + C         | Close Terminal        |
-| Super + R         | Launch Rofi           |
-| Super + E         | Launch Yazi           |
-| Super + P         | Take a Screenshot     |
-| Super + A         | Reload Eww            |
-| Super + L         | Lock the Screen       |
-| Super + Shift + W | Launch Wallpapers     |
-| Super + Shift + E | Open Nautilus         |
+| Keybind           | Action                 |
+| ----------------- | ---------------------- |
+| Super + Q         | Open Terminal          |
+| Super + C         | Close Terminal         |
+| Super + R         | Launch Rofi            |
+| Super + E         | Launch Yazi            |
+| Super + P         | Take a Screenshot      |
+| Super + A         | Reload Eww             |
+| Super + L         | Lock the Screen        |
+| Super + Shift + W | Launch Wallpapers      |
+| Super + Shift + Q | Open Terminal Floating |
+| Super + Shift + E | Open Dolphin           |
 
-Full list in `~/.config/hypr/config/keybindings.conf`
-
----
-
-### Wallpapers
-
-in $HOME/wallpapers put your wallpapers and go in $HOME/scripts and try sh normalize_wallpaper.sh (with permission +x) and done!
+pwd of settings in `~/.config/hypr/config/keybindings.conf`
 
 ---
-### Install Configs
 
-```bash
-./INSTALL.sh
-```
+## Core
 
-### Uninstall
+- git
+- eww
+- rofi 
+- zsh | fish
+- nvim 
+= ly
+- kitty
+- stow
+- socat
+- acpi
+- dbus
+- zen-browser
 
-```bash
-./UNINSTALL.sh
-```
+### Hyprland
+
+- Hyprland
+- Hyprpaper
+- Hypridle
+- Hyprlock
+- Hyprshot
+
+### Fonts 
+
+*Pacman* 
+- noto-fonts 
+- noto-fonts-emoji 
+- ttf-font-awesome 
+- ttf-jetbrains-mono 
+
+*yay* 
+- ttf-iosevka               (core)
+
+### NVIM requirement 
+
+- ripgrep                   ( live grep telescope plugin) 
+- xclip                     ( allows copy content from command line into x11 )
+- npm                       ( install lsp plugins )
+- cargo                     ( cmp for stay fasttttt )
+- rust                      ( building (faster than the lua))
+- 
+
+### Others 
+
+- base
+- base-devel 
+- pipeware
+- gvfs
+- networkmanager
+- brightnessctl 
+- pamixer 
+- playerctl
+- gtk-layer-shell 
+- xdg-desktop-portal-hyprland
+- xdg-desktop-portal
+- wl-clipboard
+
