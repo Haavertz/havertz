@@ -2,4 +2,4 @@
 # VERSION: 3.0
 SETUVAR __fish_initialized:4300
 SETUVAR fish_greeting:
-SETUVAR fish_user_paths:/home/Raj/\x2elocal/bin
+SETUVAR fish_user_paths:/home/raj/scripts\x1e/home/Raj/\x2elocal/bin

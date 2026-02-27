@@ -3,7 +3,9 @@
 Dotfiles for arch_user with hyprland config 
 
 A clean and minamal setup with _Hyprland_ 🫩
+
 Note: The configuration can be quite difficult for beginners, but KISS (Keep It Simple, Stupid).
+
 Note 2: This is still a _*beta*_ version.
 
 ## Keybinds (Super == Win Key)
@@ -66,7 +68,6 @@ pwd of settings in `~/.config/hypr/config/keybindings.conf`
 - npm                       ( install lsp plugins )
 - cargo                     ( cmp for stay fasttttt )
 - rust                      ( building (faster than the lua))
-- 
 
 ### Others 
 
