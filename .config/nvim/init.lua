@@ -1,3 +1,2 @@
-require('config.keymaps')
-require('core.lazy')
-require('commands.java')
+require("yugen.core.keymaps")
+require("yugen.lazy")
