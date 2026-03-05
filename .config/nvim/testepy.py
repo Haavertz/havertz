@@ -1,3 +1,7 @@
-def teste():
-    print("dentro da funcao teste ")
-teste()
+def testandoooo():
+    print("dsuiadmeudmausdmsuad")
+
+
+
+
+testandoooo()

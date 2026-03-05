@@ -1,0 +1,7 @@
+[user]
+	email = gleisonmorais06@gmail.com
+	name = Gleison
+[checkout]
+	defaultRemote = origin              # em casos de forks prioriza o meu fork e nao o do projeto original
+    workers = 0                         # nucleos que serao usados no threshold ( default = 0 todos os nucleos )
+	thresholdForParallelism = 60        # quantidade de arquivo que precisa para ativar o threshold e utilizar mais nucleos da maquina

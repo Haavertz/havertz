@@ -20,25 +20,39 @@ return {
     version = '1.*',
     build = "cargo build --release",
     opts = {
-      -- All presets have the following mappings:
-      -- C-space: Open menu or open docs if already open
-      -- C-n/C-p or Up/Down: Select next/previous item
-      -- C-e: Hide menu
-      -- C-k: Toggle signature help (if signature.enabled = true)
-      --
+      
       -- See :h blink-cmp-config-keymap for defining your own keymap
-      keymap = { preset = 'default' },
+      keymap = {
+
+        ["<Tab>"] = { "select_next", "fallback" },
+        ["<S-Tab>"] = { "select_prev", "fallback" },
+
+        ["<CR>"] = { "accept", "fallback" },
+
+        ["<C-space>"] = { "show", "show_documentation", "hide_documentation" },
+
+        ["<C-e>"] = { "hide", "fallback" },
+
+        ["<C-n>"] = { "select_next", "fallback" },
+        ["<C-p>"] = { "select_prev", "fallback" },
+      },
+
 
       appearance = {
         -- 'mono' (default) for 'Nerd Font Mono' or 'normal' for 'Nerd Font'
-        nerd_font_variant = 'normal'
+        nerd_font_variant = 'mono'
       },
 
-      -- (Default) Only show the documentation popup when manually triggered
-      completion = { documentation = { auto_show = false } },
+      completion = {
+        trigger = {
+          show_on_keyword = false,
+          show_on_trigger_character = true,
+        },
+        documentation = {
+          auto_show = false,
+        },
+      },
 
-      -- Default list of enabled providers defined so that you can extend it
-      -- elsewhere in your config, without redefining it, due to `opts_extend`
       sources = {
         default = { 'lsp', 'path', 'snippets', 'buffer' },
       },
@@ -107,6 +121,7 @@ return {
               "sass",
               "scss",
               "typescriptreact",
+              "sql",
           },
           init_options = {
               includeLanguages = {},
@@ -120,9 +135,13 @@ return {
               variables = {},
           },
       }) 
-
-
-
+      
+      -- slqs
+      vim.lsp.config('sqls', {
+        settings = {
+          sqls = {},
+        },
+      })
 
 
       -- LSP Enable
@@ -130,9 +149,9 @@ return {
       vim.lsp.enable("lua_ls")
       vim.lsp.enable("pyright")
       vim.lsp.enable("emmet_language_server")
+      vim.lsp.enable("sqls")
 
-    end,
-  },
+    end, },
   {
     'windwp/nvim-autopairs',
     event = "InsertEnter",
