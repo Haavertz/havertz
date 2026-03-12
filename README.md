@@ -2,7 +2,7 @@
 
 Dotfiles for arch_user with hyprland config 
 
-A clean and minamal setup with _Hyprland_ 🫩
+A clean and minimal setup with _Hyprland_ 🫩
 
 Note: The configuration can be quite difficult for beginners, but KISS (Keep It Simple, Stupid).
 
