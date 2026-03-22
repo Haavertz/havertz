@@ -10,12 +10,12 @@ SYMLINK_LOCK_CONFIG="$HOME/.config/hypr/hyprlock.conf"
 TARGET_FILE=$(readlink -f "$SYMLINK_CONFIG_FILE")
 TARGET_FILE2=$(readlink -f "$SYMLINK_LOCK_CONFIG")
 
-sed -i -e "s|^preload = .*|preload = $FULL_PATH|" \
-       -e "s|^wallpaper = ,.*|wallpaper = ,$FULL_PATH|" "$TARGET_FILE"
+sed -i '/^preload =/d' "$TARGET_FILE"
+sed -i "1i preload = $FULL_PATH" "$TARGET_FILE"
 
-sed -i -e "s|^[[:space:]]*path = .*|    path = $FULL_PATH|" "$TARGET_FILE2"
+sed -i "s|path = .*|path = $FULL_PATH|" "$TARGET_FILE"
 
-killall hyprpaper || echo "Warning: No hyprpaper process found"
+killall hyprpaper 2>/dev/null
 hyprpaper & disown
 
 if pgrep hyprlock > /dev/null; then
