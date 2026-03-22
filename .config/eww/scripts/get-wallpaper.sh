@@ -1,14 +1,16 @@
 #!/bin/bash
 
-DIRECTORY_SCRIPT=~/scripts/normalize_wallpaper.sh
-sh "$DIRECTORY_SCRIPT"
-
 DIRECTORY=~/wallpapers
-DIRECTORY=$(eval echo "$DIRECTORY")
 
 if [ -d "$DIRECTORY" ]; then
-    find -L "$DIRECTORY" -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.png" \) -printf "%f\n" \
-    | jq -R . | jq -s .
+    find -L "$DIRECTORY" -maxdepth 1 -type f -iname "*.jpg" -printf "%f\n" \
+    | grep -v '^preview-' \
+    | jq -R '
+        {
+          full: .,
+          preview: ("preview-" + .)
+        }
+      ' | jq -s .
 else
     echo "[]"
     exit 1

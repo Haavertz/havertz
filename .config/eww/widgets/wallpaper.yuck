@@ -9,12 +9,12 @@
                (for wallpaper in wallpapers
                  (eventbox  :class "image-container"
                             :cursor "pointer"
-                            :onclick "sh /home/raj/.config/eww/scripts/change-wallpaper.sh ${wallpaper}"
+                            :onclick "sh /home/raj/.config/eww/scripts/change-wallpaper.sh ${wallpaper.full}"
                             (box  :class "image-list-preview"
-                                  :width 300
-                                  :height 200
+                                  :width 300;
+                                  :height 200;
                                   :orientation "vertical"
-                                  :style "background-image: url('/home/raj/wallpapers/preview-${wallpaper}'); background-size: cover;")))))))
+                                  :style "background-image: url('/home/raj/wallpapers/${wallpaper.preview}'); background-size: cover;")))))))
 
 (defwidget win []
   (box :class "window"
