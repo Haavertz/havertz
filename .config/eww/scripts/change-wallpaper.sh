@@ -14,6 +14,7 @@ sed -i '/^preload =/d' "$TARGET_FILE"
 sed -i "1i preload = $FULL_PATH" "$TARGET_FILE"
 
 sed -i "s|path = .*|path = $FULL_PATH|" "$TARGET_FILE"
+sed -i "s|path = .*|path = $FULL_PATH|" "$TARGET_FILE2"
 
 killall hyprpaper 2>/dev/null
 hyprpaper & disown

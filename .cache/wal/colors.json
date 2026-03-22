@@ -1,28 +1,28 @@
 {
-    "wallpaper": "/home/raj/wallpapers/24.jpg",
+    "wallpaper": "/home/raj/wallpapers/31.jpg",
     "alpha": "100",
 
     "special": {
-        "background": "#0b0c0b",
-        "foreground": "#bcb8b4",
-        "cursor": "#bcb8b4"
+        "background": "#0b1b15",
+        "foreground": "#e7ebe1",
+        "cursor": "#e7ebe1"
     },
     "colors": {
-        "color0": "#0b0c0b",
-        "color1": "#49433C",
-        "color2": "#3D4040",
-        "color3": "#50514C",
-        "color4": "#6E6863",
-        "color5": "#B0493D",
-        "color6": "#F14935",
-        "color7": "#bcb8b4",
-        "color8": "#83807d",
-        "color9": "#49433C",
-        "color10": "#3D4040",
-        "color11": "#50514C",
-        "color12": "#6E6863",
-        "color13": "#B0493D",
-        "color14": "#F14935",
-        "color15": "#bcb8b4"
+        "color0": "#0b1b15",
+        "color1": "#A2A164",
+        "color2": "#A6C868",
+        "color3": "#CAC96E",
+        "color4": "#73AD87",
+        "color5": "#ACC999",
+        "color6": "#D6DDA2",
+        "color7": "#e7ebe1",
+        "color8": "#a1a49d",
+        "color9": "#A2A164",
+        "color10": "#A6C868",
+        "color11": "#CAC96E",
+        "color12": "#73AD87",
+        "color13": "#ACC999",
+        "color14": "#D6DDA2",
+        "color15": "#e7ebe1"
     }
 }
