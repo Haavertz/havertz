@@ -3,10 +3,12 @@ return {
   lazy = false,
   build = ':TSUpdate',
   config = function()
-    require'nvim-treesitter'.setup {
-        install_dir = "/parsers",
-    }
-    require'nvim-treesitter'.install { 'rust', 'javascript', 'lua', 'java', 'python' }
+    require("nvim-treesitter").setup {
+      ensure_installed = { "rust", "javascript", "lua", "java", "python" },
 
+      highlight = {
+        enable = true,
+      },
+    }
   end
 }

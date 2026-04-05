@@ -4,7 +4,7 @@ return {
     dependencies = 'nvzone/volt',
     cmd = "TimerlyToggle",
     opts = {
-      minutes = { 55, 5 },
+      minutes = { 30, 5 },
       position = "top-right"
     } 
   },
@@ -13,7 +13,7 @@ return {
     dependencies = "nvzone/volt",
     cmd = { "Typr", "TyprStats" },
     opts = {
-      phrases = { "neovim supremacy" },
+      -- phrases = { "neovim supremacy" },
       insert_on_start = true,
       mode = "phrases",
       numbers = true,
