@@ -499,6 +499,11 @@ return {
       -- dashboard.button("b", "λ  > Browse files", ":Yazi<CR>"),
       dashboard.button("z", "λ  > Browse Directories", ":Telescope list<CR>"),
       dashboard.button("f", "λ  > Find file", ":Telescope find_files<CR>"),
+      dashboard.button("n", "λ  > Nvim config", function ()
+        require("telescope.builtin").find_files({
+          cwd = vim.fn.stdpath("config"),
+        })
+      end),
       dashboard.button("r", "λ  > Recent", ":Telescope oldfiles<CR>"),
     }
 
