@@ -1,6 +1,6 @@
 return {
   "rose-pine/neovim",
-  name = "rose-pine-moon",
+  name = "rose-pine",
   config = function()
     require("rose-pine").setup({
         variant = "auto", -- auto, main, moon, or dawn

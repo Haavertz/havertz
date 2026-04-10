@@ -2,6 +2,7 @@ return {
   "goolord/alpha-nvim",
   dependencies = {
     "echasnovski/mini.icons",
+    "nvim-tree/nvim-web-devicons",
   },
 
   config = function()
@@ -495,16 +496,20 @@ return {
     }
 
     dashboard.section.buttons.val = {
-      dashboard.button("e", "  > New file", ":ene <BAR> startinsert <CR>"),
-      -- dashboard.button("b", "λ  > Browse files", ":Yazi<CR>"),
-      dashboard.button("z", "λ  > Browse Directories", ":Telescope list<CR>"),
-      dashboard.button("f", "λ  > Find file", ":Telescope find_files<CR>"),
-      dashboard.button("n", "λ  > Nvim config", function ()
+      dashboard.button("SPC e", "λ > New file", ":ene <BAR> startinsert <CR>"),
+      -- dashboard.button("SPC .", "λ > File Browser", ":Yazi<CR>"),
+      dashboard.button("SPC f", "λ > Find file", ":Telescope find_files<CR>"),
+      dashboard.button("SPC r", "λ > Recent", ":Telescope oldfiles<CR>"),
+      dashboard.button("SPC n", "λ > Nvim config", function ()
         require("telescope.builtin").find_files({
           cwd = vim.fn.stdpath("config"),
         })
       end),
-      dashboard.button("r", "λ  > Recent", ":Telescope oldfiles<CR>"),
+      dashboard.button("SPC t", "λ > Terminal", "<cmd>lua require('FTerm').toggle()<CR>"),
+      dashboard.button("SPC g", "λ > Git", '<cmd>lua require("FTerm").scratch({cmd="lazygit"})<CR>'),
+      dashboard.button("SPC m", "λ > Mail", '<cmd>lua require("FTerm").scratch({cmd="neomutt"})<CR>'),
+      dashboard.button("SPC h", "λ > Help", "<cmd>Telescope help_tags<cr>"),
+      dashboard.button("q", "λ > Quit NVIM", ":qa<CR>"),
     }
 
     alpha.setup(dashboard.opts)
